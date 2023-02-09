@@ -6,52 +6,103 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body class="debug">
 
         <main class="d-flex ">
 
             <aside class="sidebar">
-                <div class="sidebar-container d-flex flex-column space-between">
 
-                    <div>
+                <section class="sidebar-top d-flex flex-column">
+
+                    <div class="logo">
+                        <img class="logo-small" src="./img/logo-small.svg" alt="Logo Small">
+                        <img class="logo-big dis-none" src="./img/logo.svg" alt="Logo Spotify">
+                    </div>
+
+                    <div class="nav-main">
 
                         <ul class="no-dec">
-                            <li>
-                                <a href="#">LOGO</a>
-                                <span></span>
+                            <li class="nav-main-link">
+                                <a class="text-dec " href="#">
+                                    <img class="nav-main-logo" src="./img/home.svg" alt="home logo">
+                                    <span class="main-logo-text txt-white dis-none">Home</span>
+                                </a>
                             </li>
-                            <li><a href="#">LOGO</a></li>
-                            <li><a href="#">LOGO</a></li>
-                            <li><a href="#">LOGO</a></li>
+                            <li class="nav-main-link">
+                                <a class="text-dec " href="#">
+                                    <img class="nav-main-logo" src="./img/search.svg" alt="home logo">
+                                    <span class="main-logo-text txt-grey dis-none">Cerca</span>
+                                </a>
+                            </li>
+                            <li class="nav-main-link">
+                                <a class="text-dec " href="#">
+                                    <img class="nav-main-logo" src="./img/libreria.svg" alt="home logo">
+                                    <span class="main-logo-text txt-grey dis-none">La tua libreria</span>
+                                </a>
+                            </li>
                         </ul>
 
                     </div>
 
-                    <div>
-                        
-                        <ul class="no-dec space-between">
-                            <li><a href="#">DOWNLOAD</a></li>
-                            <li><a href="#">PROFILE</a></li>
+                    <div class="playlist-main d-flex flex-column dis-none">
+
+                        <h3 class="txt-white">PLAYLIST</h3>
+
+                        <a class="add-playlist text-dec txt-grey" href="#">
+                            <i class="fa-solid fa-plus"></i>
+                            <span class="add-playlist-text"> Crea Playlist</span>
+                        </a>
+
+                        <ul class="add-list no-dec txt-grey">
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
+                            <li>Nome Playlist</li>
                         </ul>
 
                     </div>
+                </section>
 
-                </div>
+                <section class="sidebar-bottom">
+                    <h5 class="side-bottom-title txt-grey">
+                        <i class="fa-regular fa-circle-down"></i>
+                        <span class="dis-none">Installa App</span> 
+                    </h5>
+                    <div class="bottom-img">
+                        <img src="./img/profile.svg" alt="profile image">
+                        <span class="dis-none txt-white">John Doe</span>
+                    </div>
+                </section>
             </aside>
 
             <section class="main-container overflow">
 
-                <div class="cta">CALL TO ACTION</div>
+                <div class="cta">
+                    <a class="text-dec txt-white" href="#">EFFETTUA L'UPGRADE</a>
+                </div>
 
-                <nav class="navigator">
-                    <ul class="list-nav d-flex no-dec wrap">
-                        <li><a href="#">LINK</a></li>
-                        <li><a href="#">LINK</a></li>
-                        <li><a href="#">LINK</a></li>
-                        <li><a href="#">LINK</a></li>
-                        <li><a href="#">LINK</a></li>
-                        <li><a href="#">LINK</a></li>
+                <nav class="navigator txt-grey">
+                    <ul class="list-nav d-flex no-dec wrap  bold">
+                        <li><a class="text-dec" href="#">IN EVIDENZA</a></li>
+                        <li><a class="text-dec" href="#">PODCAST</a></li>
+                        <li><a class="text-dec" href="#">CLASSIFICHE</a></li>
+                        <li><a class="text-dec" href="#">GENERI E MOOD</a></li>
+                        <li><a class="text-dec" href="#">NUOVE USCITE</a></li>
+                        <li><a class="text-dec" href="#">SCOPRI</a></li>
                     </ul>
                 </nav>
 

@@ -6,6 +6,11 @@
 
 :root {
     --text-white: #fff;
+    --text-grey: #4c4c4c;
+}
+
+html{
+    font-family: sans-serif;
 }
 
 /* Debug rules */
@@ -14,29 +19,7 @@
     background-color: green;
 }
 
-.debug main{
-    background-color: aliceblue;
-}
 
-.debug .list-nav li a{
-    color: var(--text-white);
-}
-
-.debug .main-container{
-    background-color: black;
-}
-
-.debug .sidebar{
-    background-color: red;
-}
-
-.debug .cta{
-    height: 100px;
-}
-
-.debug .navigator{
-    background-color: aqua;
-}
 
 .debug .cover-container{
     background-color: bisque;
@@ -55,6 +38,12 @@
 }
 
 
+
+
+.debug .logo{
+    height: 50px;
+}
+
 /* Utility */
 
 .d-flex{
@@ -63,6 +52,10 @@
 
 .no-dec{
     list-style: none;
+}
+
+.text-dec{
+    text-decoration: none;
 }
 
 .wrap {
@@ -85,6 +78,21 @@
     align-items: center;
 }
 
+.txt-white{
+    color: var(--text-white);
+}
+
+.txt-grey{
+    color: var(--text-grey);
+}
+
+.dis-none{
+    display: none;
+}
+
+.bold {
+    font-weight: bold;
+}
 
 /* CSS Rules */
 
@@ -93,7 +101,9 @@
 }
 
 main{
+    background-color: #141922;
     height: calc(100vh - 100px);
+    overflow-y: hidden;
 }
 
 footer{
@@ -102,21 +112,130 @@ footer{
 }
 
 .sidebar{
+    background-color: black;
     height: 100%;
     width: 50px;
+    overflow-y: hidden;
+    min-height: 500px;
 }
 
-.sidebar-container {
-    height: 100%;
+
+.sidebar-bottom{
+    height: 100px;
+}
+
+
+.sidebar-top {
+    height: calc(100% - 100px);
+    overflow-y: hidden;
+}
+
+.sidebar .playlist-main {
+    overflow-y: hidden;
+    
+}
+
+.sidebar .playlist-main ul {
+    overflow-y: scroll;
+}
+
+.logo-small {
+    height: 30px;
+    margin: 10px;
+}
+
+.logo-big{
+    height: 50px;
+    margin: 0px 28px;
+    padding: 5px;
+
+}
+
+.add-playlist{
+    margin: 10px;
+        display: inline-block;
+    height: 30px;
+
+}
+
+.fa-plus{
+    height: 30px;
+    width: 30px;
+    padding-left: 2px;
+    background-color: #4c4c4c;
+    color: black;
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.add-playlist-text{
+    vertical-align: middle;
+}
+
+.add-list{
+    margin: 10px;
+}
+
+.add-list li{
+    margin-bottom: 5px;
+}
+
+.playlist-main h3{
+    margin: 10px;
+}
+.nav-main-logo{
+    height: 30px;
+    vertical-align: middle;
+}
+
+.main-logo-text{
+    vertical-align: middle;
+}
+
+.nav-main-link{
+    vertical-align: middle;
+    margin: 10px;
+}
+
+.bottom-img{
+    padding-top: 10px;
+    margin: 10px;
+}
+
+.bottom-img img{
+    background-color: var(--text-grey);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.fa-circle-down{
+    margin: 0px 8px;
+}
+
+
+.side-bottom-title{
+    margin: 15px 10px 10px 10px;
 }
 
 .cta{
     height: 100px;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     left: 50px;
+}
+
+.cta a{
+    border-radius: 32px;
+    padding: 16px 32px;
+    border: 1px solid white;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-weight: bold;
 }
 
 .navigator {
@@ -124,12 +243,15 @@ footer{
     height: 80px;
 }
 
-.list-nav li a {
-   text-decoration: none;
+
+.list-nav li{
+    margin: 0px 16px;
 }
 
+
+
 .cover-item{
-    width: calc(50% -40px);
+    width: calc(50% - 40px);
     margin: 20px;
 }
 
@@ -147,6 +269,38 @@ footer{
         width: calc(100% - 200px);
         left: 200px;
     }
+
+    .logo-small {
+        display: none;
+    }
+
+    .logo-big {
+        display: inline-block;
+    }
+
+    .main-logo-text{
+        display: inline-block;
+    }
+
+    .playlist-main{
+        display: block  ;
+    }
+    
+    .bottom-img span{
+    display: inline-block;
+    }
+
+    .bottom-img{
+        border-top: 1px solid var(--text-grey); 
+    }
+    
+    .fa-circle-down{
+    margin: 0;
+    }
+
+    .side-bottom-title span{
+        display: inline-block;
+    }
     
 }
 
@@ -157,8 +311,6 @@ footer{
         margin: 30px;
     }
 
-    
-
 }
 
 @media screen and (min-width: 992px) {
@@ -167,8 +319,6 @@ footer{
         width: calc(100% / 6 - 40px);
         margin: 20px ;
     }
-
-
 
 }
 
