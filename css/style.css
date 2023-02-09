@@ -243,6 +243,19 @@ footer{
 .cover-item{
     width: calc(50% - 40px);
     margin: 20px;
+    position: relative;
+}
+
+
+
+.overlay{
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
 }
 
 .cover-item img{
@@ -266,7 +279,7 @@ footer{
 }
 
 .song-name, .volume{
-    width: 30%;
+    width: 20%;
 }
 
 .player{
@@ -400,6 +413,14 @@ footer section{
     .cover-item {
         width: calc(25%);
         margin: 30px;
+    }
+
+    .song-name, .volume {
+        width: 30%;
+    }
+    
+    .player{
+        width: 40%;
     }
 
 }
