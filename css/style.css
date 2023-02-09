@@ -387,7 +387,7 @@ footer section{
     }
 
     .playlist-main{
-        display: block  ;
+        display: flex;
     }
     
     .bottom-img span{
