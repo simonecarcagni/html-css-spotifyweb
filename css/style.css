@@ -15,22 +15,10 @@ html{
 
 /* Debug rules */
 
-.debug footer{
-    background-color: green;
-}
 
 .debug h2 {
     color: var(--text-white);
 }
-
-.debug footer section{
-    height: 80px;
-    width: 30%;
-    background-color: aqua;
-}
-
-
-
 
 .debug .logo{
     height: 50px;
@@ -70,6 +58,10 @@ html{
     align-items: center;
 }
 
+.align-end{
+    align-items: end;
+}
+
 .txt-white{
     color: var(--text-white);
 }
@@ -90,6 +82,10 @@ html{
     justify-content: center;
 }
 
+.justify-end{
+    justify-content: flex-end;
+}
+
 /* CSS Rules */
 
 .main-container{
@@ -105,6 +101,7 @@ main{
 footer{
     height: 100px;
     width: 100%;
+    background-color: #282828;
 }
 
 .sidebar{
@@ -267,6 +264,88 @@ footer{
 .popular-artist h2,.popular-artist h5 {
     margin: 20px;
 }
+
+.song-name, .volume{
+    width: 30%;
+}
+
+.player{
+    width: 40%;
+}
+
+.song-name img{
+    height: 100%;
+    vertical-align: middle;
+}
+
+.song-name *{
+    padding: 15px 0px 15px 15px;
+}
+
+.song-name span{
+    padding-left: 0px;
+}
+
+.song-name h5{
+    margin-top: 8px;
+}
+
+.song-name i{
+    margin-top: 12px;
+}
+
+footer section{
+    height: 80px;
+}
+
+.volume *{
+    margin: 0px 5px;
+}
+
+.progress-bar{
+    height: 2px;
+    width: 30%;
+    background-color: var(--text-grey);
+    border-radius: 30px;
+}
+
+.progress-bar-color{
+    margin: 0px;
+    height: 2px;
+    width: 20%;
+    background-color: aliceblue;
+    border-radius: 30px;
+}
+
+.player-top *{
+    padding-top: 4px;
+    margin: 10px;
+}
+
+.big-icon{
+    font-size: 24px;
+    padding: 0px;
+}
+
+.player-bottom *{
+    margin: 0px 15px;
+}
+
+.player-bottom .progress-bar{
+    height: 4px;
+    width: 100%;
+    margin-top: 4px;
+}
+
+.player-bottom .progress-bar .progress-bar-color {
+    height: 4px;
+    margin: 0px;
+}
+
+.player-minutes{
+    font-size: 10px;
+}
+
 @media screen and (min-width: 576px) {
     
     .sidebar {
