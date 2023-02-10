@@ -97,12 +97,30 @@
 
                 <nav class="navigator ">
                     <ul class="list-nav d-flex no-dec wrap bold justify-center">
-                        <li><a class="text-dec txt-grey " href="#">IN EVIDENZA</a></li>
-                        <li><a class="text-dec txt-grey" href="#">PODCAST</a></li>
-                        <li><a class="text-dec txt-grey" href="#">CLASSIFICHE</a></li>
-                        <li><a class="text-dec txt-grey" href="#">GENERI E MOOD</a></li>
-                        <li><a class="text-dec txt-grey" href="#">NUOVE USCITE</a></li>
-                        <li><a class="text-dec txt-grey" href="#">SCOPRI</a></li>
+                        <li>
+                            <a class="text-dec txt-grey" href="#">IN EVIDENZA</a>
+                            <span class="border-green"></span>
+                        </li>
+                        <li>
+                            <a class="text-dec txt-grey" href="#">PODCAST</a>
+                            <span class="border-green"></span>
+                        </li>
+                        <li>
+                            <a class="text-dec txt-grey" href="#">CLASSIFICHE</a>
+                            <span class="border-green"></span>
+                        </li>
+                        <li>
+                            <a class="text-dec txt-grey" href="#">GENERI E MOOD</a>
+                            <span class="border-green"></span>
+                        </li>
+                        <li>
+                            <a class="text-dec txt-grey" href="#">NUOVE USCITE</a>
+                            <span class="border-green"></span>
+                        </li>
+                        <li>
+                            <a class="text-dec txt-grey" href="#">SCOPRI</a>
+                            <span class="border-green"></span>
+                        </li>
                     </ul>
                 </nav>
 
@@ -110,9 +128,11 @@
                     <h2>Recently played</h2>
                     <ul class="no-dec d-flex wrap">
                         <li class="cover-item d-flex flex-column align-center">
-                            <img src="./img/metal_lifting.jpg" alt="Metal">
-                            <div class="overlay">
-
+                            <div class="wrapper">
+                                <img src="./img/metal_lifting.jpg" alt="Metal">
+                                <div class="overlay d-flex justify-center align-center">
+                                    <i class="fa-regular fa-circle-play big-icon txt-white"></i>
+                                </div>
                             </div>
                             <h3 class="txt-white">Heavy Metal</h3>
                             <h5 class="txt-grey">Subtitle</h5>
@@ -120,8 +140,9 @@
                         <li class="cover-item d-flex flex-column align-center">
                             <img src="./img/stranger.jpeg" alt="Stranger Things">
                             <div class="overlay">
+
                             </div>
-                            <h3 class="txt-white">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+                            <h3 class="txt-white txt-align-center">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
                             <h5 class="txt-grey">Kyle Dixon & Michael Stein</h5>
                         </li>
                         <li class="cover-item d-flex flex-column align-center">
@@ -208,14 +229,17 @@
 
         <footer class="d-flex space-between align-center">
 
-            <section class="song-name d-flex">
+            <section class="song-name d-flex align-center ">
                 <img src="./img/sinister.jpeg" alt="Sinister">
                 <h5 class="txt-white">Sinister <br> <span class="txt-grey">Brano nome</span></h5>
-                <i class="fa-regular fa-heart txt-grey"></i>
-                <i class="fa-regular fa-folder txt-grey"></i>
+                <div>
+                    <i class="fa-regular fa-heart txt-grey"></i>
+                    <i class="fa-regular fa-folder txt-grey"></i>
+                </div>
             </section>
             
             <section class="player">
+
                 <div class="player-top txt-white d-flex justify-center">
                     <i class="fa-solid fa-shuffle"></i>
                     <i class="fa-solid fa-backward-step"></i>
@@ -223,25 +247,35 @@
                     <i class="fa-solid fa-forward-step"></i>
                     <i class="fa-solid fa-rotate-right"></i>
                 </div>
+
                 <div class="player-bottom d-flex justify-center">
                     <div class="minute-playing">
                         <h5 class="txt-white player-minutes">0:25</h5>
                     </div>
-                    <div class="progress-bar">
-                        <div class="progress-bar-color"></div>
+                    <div class="player-time">
+                        <div class="progress-bar">
+                            <div class="progress-bar-color">
+                                <div class="round-cursore"></div>
+                            </div>
+                        </div>
                     </div>
                     <div class="minute-total">
                         <h5 class="txt-white player-minutes">4:35</h5>
                     </div>
                 </div>
+
             </section>
             
             <section class="volume d-flex align-center justify-end">
                 <i class="fa-solid fa-list-ul txt-white"></i>
                 <i class="fa-solid fa-desktop txt-white"></i>
                 <i class="fa-solid fa-volume-high txt-white"></i>
-                <div class="progress-bar">
-                    <div class="progress-bar-color"></div>
+                <div class="volume-bar">
+                    <div class="progress-bar">
+                        <div class="progress-bar-color">
+                            <div class="round-cursore"></div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
