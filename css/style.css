@@ -223,6 +223,7 @@ footer{
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 3;
 }
 
 .cta a{
@@ -233,6 +234,7 @@ footer{
     top: 8px;
     right: 16px;
     font-weight: bold;
+    
 }
 
 .navigator {
